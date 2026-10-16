@@ -1,3 +1,5 @@
+name: robotics-turtlebot3
+
 services:
   dev:
     build:
@@ -16,6 +18,7 @@ services:
       - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
       - DISPLAY=${DISPLAY}
       - QT_X11_NO_MITSHM=1
+      - TURTLEBOT3_MODEL=waffle_pi
     volumes:
       - ../src:/ws/src
       - ../config:/ws/config
