@@ -24,6 +24,7 @@ services:
       - ../config:/ws/config
       - ../launch:/ws/launch
       - ../data:/ws/data
+      - ../maps:/ws/maps
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - ws_build:/ws/build
       - ws_install:/ws/install
